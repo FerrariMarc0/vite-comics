@@ -19,6 +19,6 @@
   <AppFooter/>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @use 'styles/variables.scss' as *;
 </style>

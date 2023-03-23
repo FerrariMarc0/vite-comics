@@ -55,7 +55,7 @@
     <header>
         <div><img :src="image" alt="logo"></div>
         <div>
-            <ul>
+            <ul class="navBox">
                 <li v-for="menu in menu"><a href="#" :target="menu.target">{{ menu.name }}</a></li>
             </ul>
         </div>
@@ -63,13 +63,26 @@
 </template>
 
 <style lang="scss" scoped>
-    @use './styles/variables.scss' as *;
+    
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
     header{
+        background-color: $head-bg-color;
         display: flex;
+        justify-content: space-around;
+        .navBox{
+            display: flex;
+            list-style: none;
+            padding: 50px;
+            
+            a{
+                text-decoration: none;
+                padding: 0 .625rem;
+
+            }
+        }
     }
 </style>
