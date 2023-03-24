@@ -18,12 +18,3 @@
   <AppMain/>
   <AppFooter/>
 </template>
-
-<style lang="scss">
-  /* @use 'styles/variables.scss' as *; */
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-</style>
