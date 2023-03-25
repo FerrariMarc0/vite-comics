@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'AppBottomFooter',
+        name: 'Bottom footer',
         data(){
             return{
                 icons:['public/img/fb.png', 'public/img/twitter.png', 'public/img/utube.png', 'public/img/pinterest.png', 'public/img/periscope.png']
@@ -18,14 +18,15 @@
         <div class="social">
             <h2 class="follow">Follow Us</h2>
             <ul>
-                <li v-for="icon in icons"><img :src="icon" alt=""></li>
+                <li v-for="icon in icons"><img :src="icon" alt="icon"></li>
             </ul>
         </div>
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
     .bottom_footer{
-        background-color: #303030;
+        background-color: $footer-color;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -33,12 +34,12 @@
         text-transform: uppercase;
     }
     .sign{
-        border: 1px solid #0282f9;
-        padding: 10px;
-        color: #ffffff;
+        border: .0625rem solid $main-bottom-color;
+        padding: .625rem;
+        color: $head-bg-color;
     }
     .follow{
-        color: #0282f9;
+        color: $main-bottom-color;
         line-height: 2.5rem;
     }
     .social{
@@ -47,7 +48,7 @@
             display: flex;
             list-style: none;
             li{
-                margin-left: 20px;
+                margin-left: 1.25rem;
             }
         }
     }

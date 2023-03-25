@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'card',
+        name: 'cards',
         props: {
             img: String,
             title: String

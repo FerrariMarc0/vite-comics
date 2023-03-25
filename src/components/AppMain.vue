@@ -3,7 +3,7 @@
     import AppMainBottom from './AppMainBottom.vue';
     import AppCardsList from './AppCardsList.vue';
     export default{
-        name: 'Dc Comics',
+        name: 'Main',
         components: {
             AppMainTop,
             AppCardsList,

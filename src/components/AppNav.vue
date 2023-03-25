@@ -1,6 +1,6 @@
 <script>
     export default{
-    name: 'AppHeader',
+    name: 'Nav',
     data(){
         return {
             menu: [
@@ -75,7 +75,7 @@
             
             a{
                 padding: 45px .625rem;
-                color: #6f4646;
+                color: $nav-font-color;
                 font-weight: 800;
                 &:hover{
                     color: $main-bottom-color;

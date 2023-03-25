@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'AppTopFooter',
+        name: 'Top footer',
         data(){
             return{
                 title: ['Dc comics', 'Shop', 'DC', 'Sites'],
@@ -46,6 +46,8 @@
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+@use '../assets/styles/partials/mixins' as *;
     .top_footer{
         height: 28.125rem;
         display: flex;
@@ -57,12 +59,12 @@
     
     .footer_list{
         display: flex;
-        color: #ffffff;
+        color: $head-bg-color;
         gap: 2.5rem;
         li{
             list-style: none;
             margin-bottom: .625rem;
-            color: #95957c;
+            color: $footer-font-color;
         }
         h1{
             margin-bottom: 1.25rem;
@@ -72,9 +74,6 @@
     .logo{
         height: 28.125rem;
         width: 34.375rem;
-        background-image: url(img/dc-logo-bg.png);
-        background-size: 34.375rem ;
-        background-repeat: no-repeat;
-        overflow: hidden;
+        @include bgImage('img/dc-logo-bg.png')
     }
 </style>

@@ -1,6 +1,6 @@
 <script>
     export default{
-        name: 'AppMainBottom',
+        name: 'Main bottom',
         data(){
             return{
                 items:[
@@ -43,11 +43,12 @@
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
     .bottom_main{
-        background-color: #0282f9;
+        background-color: $main-bottom-color;
         display: flex;
         justify-content: center;
-        padding: 50px;
+        padding: 3.125rem;
         text-transform: uppercase;
         ul{
             display: flex;
@@ -55,13 +56,13 @@
                 list-style: none;
                 display: flex;
                 align-items: center;
-                padding: 0 40px;
+                padding: 0 2.5rem;
                 img{
-                    height: 57px;
+                    height: 3.5625rem;
                 }
                 span{
-                    padding-left: 10px;
-                    color: #ffffff;
+                    padding-left: .625rem;
+                    color: $head-bg-color;
                 }
             }
         }
