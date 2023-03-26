@@ -3,7 +3,7 @@
         name: 'Main top'
     }
 </script>
-
+    <!-- JUMBOTRON -->
 <template>
     <div class="top_main"></div>
 </template>

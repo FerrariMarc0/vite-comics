@@ -17,6 +17,7 @@
         </div>
         <div class="social">
             <h2 class="follow">Follow Us</h2>
+                <!-- social icons rendering -->
             <ul>
                 <li v-for="icon in icons"><img :src="icon" alt="icon"></li>
             </ul>

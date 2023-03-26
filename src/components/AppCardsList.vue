@@ -94,8 +94,9 @@ import CardElement from './CardElement.vue';
         </div>
         <div>
             <div class="card_container">
+                <!-- cards rendering from "CardElement's props"-->
                 <CardElement class="cards" v-for="item in products" 
-                :img="item.src" 
+                :img="item.src"
                 :title="item.series"/>
             </div>
             
@@ -103,7 +104,7 @@ import CardElement from './CardElement.vue';
         <button class="btn">Load More</button>
     </section>
 </template>
-
+    <!-- CARDS SECTION LAYOUT -->
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
     section{

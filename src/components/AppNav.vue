@@ -53,13 +53,14 @@
     <header>
         <div><img src="public/img/dc-logo.png" alt="logo"></div>
         <div>
-            <ul class="navBox">
+            <ul class="navBox">     <!-- HEADER NAV RENDERING -->
                 <li v-for="menu in menu"><a href="#" :target="menu.target">{{ menu.name }}</a></li>
             </ul>
         </div>
     </header>
 </template>
 <style lang="scss" scoped>
+/* HEADER LAYOUT */
 @use '../assets/styles/partials/variables' as *;
     header{
         height: 7.375rem;
